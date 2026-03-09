@@ -77,8 +77,8 @@
     nextBtn.addEventListener("click", handleNext);
     backBtn.addEventListener("click", handleBack);
     restartBtn.addEventListener("click", restartQuiz);
-    homeBtn.addEventListener("click", goHome);
-    resultsHomeBtn.addEventListener("click", goHome);
+    if (homeBtn) homeBtn.addEventListener("click", confirmGoHome);
+    if (resultsHomeBtn) resultsHomeBtn.addEventListener("click", goHome);
     questionNavBtn.addEventListener("click", openNavigator);
     navigatorClose.addEventListener("click", closeNavigator);
     navigatorOverlay.addEventListener("click", (e) => {
@@ -162,6 +162,11 @@
     }
   }
 
+  function onBeforeUnload(e) {
+    e.preventDefault();
+    e.returnValue = "";
+  }
+
   function startQuiz() {
     state.currentIndex = 0;
     state.answers = {};
@@ -175,6 +180,8 @@
       state.timerSeconds++;
       updateTimerDisplay();
     }, 1000);
+
+    window.addEventListener("beforeunload", onBeforeUnload);
 
     startScreen.classList.add("hidden");
     resultsScreen.classList.add("hidden");
@@ -474,6 +481,7 @@
 
   function finishQuiz() {
     clearInterval(state.timerInterval);
+    window.removeEventListener("beforeunload", onBeforeUnload);
 
     quizScreen.classList.add("hidden");
     resultsScreen.classList.remove("hidden");
@@ -607,8 +615,14 @@
     $("#score-number").style.color = "";
   }
 
+  function confirmGoHome() {
+    if (!confirm("Progress will not be saved.\nAre you sure you want to exit?")) return;
+    goHome();
+  }
+
   function goHome() {
     clearInterval(state.timerInterval);
+    window.removeEventListener("beforeunload", onBeforeUnload);
     quizScreen.classList.add("hidden");
     resultsScreen.classList.add("hidden");
     startScreen.classList.remove("hidden");
