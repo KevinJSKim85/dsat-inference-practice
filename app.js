@@ -26,6 +26,8 @@
   const nextBtn = $("#next-btn");
   const backBtn = $("#back-btn");
   const restartBtn = $("#restart-btn");
+  const homeBtn = $("#home-btn");
+  const resultsHomeBtn = $("#results-home-btn");
 
   const passageText = $("#passage-text");
   const questionStem = $("#question-stem");
@@ -75,6 +77,8 @@
     nextBtn.addEventListener("click", handleNext);
     backBtn.addEventListener("click", handleBack);
     restartBtn.addEventListener("click", restartQuiz);
+    homeBtn.addEventListener("click", goHome);
+    resultsHomeBtn.addEventListener("click", goHome);
     questionNavBtn.addEventListener("click", openNavigator);
     navigatorClose.addEventListener("click", closeNavigator);
     navigatorOverlay.addEventListener("click", (e) => {
@@ -594,6 +598,18 @@
   }
 
   function restartQuiz() {
+    resultsScreen.classList.add("hidden");
+    startScreen.classList.remove("hidden");
+
+    const circle = $("#score-circle");
+    circle.style.borderColor = "";
+    circle.style.background = "";
+    $("#score-number").style.color = "";
+  }
+
+  function goHome() {
+    clearInterval(state.timerInterval);
+    quizScreen.classList.add("hidden");
     resultsScreen.classList.add("hidden");
     startScreen.classList.remove("hidden");
 

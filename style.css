@@ -963,8 +963,18 @@ button {
 
 /* --- Results Actions --- */
 .results-actions {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
     padding: 20px 0 40px;
+}
+
+.home-btn {
+    opacity: 0.7;
+    transition: opacity 0.15s ease;
+}
+.home-btn:hover {
+    opacity: 1;
 }
 
 /* =============================================

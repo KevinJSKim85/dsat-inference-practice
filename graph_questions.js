@@ -1,3 +1,4 @@
+// biome-ignore lint/correctness/noUnusedVariables: consumed by app scripts at runtime.
 const graphQuestions = [
   {
     "id": 1,
