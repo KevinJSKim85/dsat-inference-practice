@@ -6,6 +6,7 @@
     answers: {},
     results: {},
     revealed: {},
+    highlights: {},
     timerSeconds: 0,
     timerInterval: null,
     timerVisible: true,
@@ -46,6 +47,8 @@
   const navigatorClose = $("#navigator-close");
   const toggleTimerBtn = $("#toggle-timer-btn");
   const hideTimerBtn = $("#hide-timer-btn");
+  const highlightToolbar = $("#highlight-toolbar");
+  const hlBtn = $("#hl-btn");
 
   const totalQCount = $("#total-q-count");
 
@@ -76,6 +79,18 @@
     });
 
     document.addEventListener("keydown", handleKeyboard);
+
+    passageText.addEventListener("mouseup", handlePassageSelection);
+    passageText.addEventListener("touchend", function () {
+      setTimeout(handlePassageSelection, 50);
+    });
+    hlBtn.addEventListener("click", applyHighlight);
+    document.addEventListener("mousedown", function (e) {
+      if (!highlightToolbar.contains(e.target)) {
+        highlightToolbar.classList.add("hidden");
+      }
+    });
+    passageText.addEventListener("click", handleHighlightRemove);
   }
 
   function handleKeyboard(e) {
@@ -111,6 +126,7 @@
     state.answers = {};
     state.results = {};
     state.revealed = {};
+    state.highlights = {};
     state.timerSeconds = 0;
 
     clearInterval(state.timerInterval);
@@ -135,7 +151,11 @@
     questionCounter.textContent = `Question ${state.currentIndex + 1} of ${total}`;
     progressFill.style.width = `${((state.currentIndex + 1) / total) * 100}%`;
 
-    passageText.textContent = q.passage;
+    if (state.highlights[q.id]) {
+      passageText.innerHTML = state.highlights[q.id];
+    } else {
+      passageText.textContent = q.passage;
+    }
     questionStem.textContent = q.question;
 
     choicesContainer.innerHTML = "";
@@ -275,7 +295,7 @@
       `;
     }
 
-    explanationText.textContent = q.explanation;
+    explanationText.innerHTML = q.explanation;
 
     setTimeout(() => {
       feedbackPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -325,6 +345,80 @@
     state.timerVisible = !state.timerVisible;
     timerDisplay.style.display = state.timerVisible ? "inline" : "none";
     hideTimerBtn.textContent = state.timerVisible ? "Hide" : "Show";
+  }
+
+  function handlePassageSelection() {
+    const selection = window.getSelection();
+    if (!selection.rangeCount || selection.isCollapsed) return;
+
+    const range = selection.getRangeAt(0);
+    if (!passageText.contains(range.commonAncestorContainer)) return;
+
+    highlightToolbar.classList.remove("hidden");
+
+    const rect = range.getBoundingClientRect();
+    const tbWidth = highlightToolbar.offsetWidth;
+    const tbHeight = highlightToolbar.offsetHeight;
+
+    let top = rect.top - tbHeight - 8;
+    let left = rect.left + rect.width / 2 - tbWidth / 2;
+
+    if (top < 8) top = rect.bottom + 8;
+    if (top < 8) top = 8;
+    if (top + tbHeight > window.innerHeight - 8) top = window.innerHeight - tbHeight - 8;
+    if (left < 8) left = 8;
+    if (left + tbWidth > window.innerWidth - 8) {
+      left = window.innerWidth - tbWidth - 8;
+    }
+
+    highlightToolbar.style.top = top + "px";
+    highlightToolbar.style.left = left + "px";
+  }
+
+  function applyHighlight() {
+    const selection = window.getSelection();
+    if (!selection.rangeCount || selection.isCollapsed) {
+      highlightToolbar.classList.add("hidden");
+      return;
+    }
+
+    const range = selection.getRangeAt(0);
+    if (!passageText.contains(range.commonAncestorContainer)) {
+      highlightToolbar.classList.add("hidden");
+      return;
+    }
+
+    const span = document.createElement("span");
+    span.className = "highlighted-text";
+    try {
+      range.surroundContents(span);
+    } catch (_) {
+      const contents = range.extractContents();
+      span.appendChild(contents);
+      range.insertNode(span);
+    }
+
+    selection.removeAllRanges();
+    highlightToolbar.classList.add("hidden");
+    saveHighlights();
+  }
+
+  function handleHighlightRemove(e) {
+    const hl = e.target.closest(".highlighted-text");
+    if (!hl || !passageText.contains(hl)) return;
+
+    const parent = hl.parentNode;
+    while (hl.firstChild) {
+      parent.insertBefore(hl.firstChild, hl);
+    }
+    parent.removeChild(hl);
+    parent.normalize();
+    saveHighlights();
+  }
+
+  function saveHighlights() {
+    const q = questions[state.currentIndex];
+    state.highlights[q.id] = passageText.innerHTML;
   }
 
   function finishQuiz() {

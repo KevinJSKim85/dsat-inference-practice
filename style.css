@@ -970,6 +970,57 @@ button {
 }
 
 /* =============================================
+   HIGHLIGHTER
+   ============================================= */
+.highlight-toolbar {
+    position: fixed;
+    z-index: 200;
+    background: var(--header-bg);
+    border-radius: 20px;
+    padding: 4px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    animation: fadeIn 0.12s ease;
+}
+
+.hl-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 16px;
+    background: transparent;
+    color: white;
+    font-size: 0.813rem;
+    font-weight: 500;
+    font-family: var(--font-stack);
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s;
+    white-space: nowrap;
+}
+.hl-btn:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.hl-swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff176;
+    border: 2px solid rgba(255,255,255,0.4);
+    flex-shrink: 0;
+}
+
+.highlighted-text {
+    background-color: rgba(255, 241, 118, 0.5);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.highlighted-text:hover {
+    background-color: rgba(255, 241, 118, 0.75);
+}
+
+/* =============================================
    SCROLLBAR (Subtle)
    ============================================= */
 ::-webkit-scrollbar { width: 6px; }
