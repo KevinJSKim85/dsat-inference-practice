@@ -10,6 +10,7 @@
     timerSeconds: 0,
     timerInterval: null,
     timerVisible: true,
+    mode: "inference",
   };
 
   const LETTERS = ["A", "B", "C", "D"];
@@ -51,6 +52,18 @@
   const hlBtn = $("#hl-btn");
 
   const totalQCount = $("#total-q-count");
+  const typeLabel = $("#type-label");
+  const startDescription = $("#start-description");
+  const graphImageSection = $("#graph-image-section");
+  const graphImage = $("#graph-image");
+  const modeCards = $$(".mode-card");
+
+  function getActiveQuestions() {
+    if (state.mode === "graph" && typeof graphQuestions !== "undefined") {
+      return graphQuestions;
+    }
+    return questions;
+  }
 
   function init() {
     totalQCount.textContent = questions.length;
@@ -69,6 +82,29 @@
     });
     hideTimerBtn.addEventListener("click", toggleTimer);
     toggleTimerBtn.addEventListener("click", toggleTimer);
+
+    modeCards.forEach((card) => {
+      card.addEventListener("click", () => {
+        modeCards.forEach((c) => c.classList.remove("active"));
+        card.classList.add("active");
+        const mode = card.dataset.mode;
+        state.mode = mode;
+        const qs = getActiveQuestions();
+        totalQCount.textContent = qs.length;
+        if (mode === "graph") {
+          typeLabel.innerHTML = "Quantitative Evidence";
+          startDescription.textContent =
+            "Practice quantitative evidence questions from real Digital SAT papers. " +
+            "Each question includes a data table or graph that you must interpret to select the best answer.";
+        } else {
+          typeLabel.innerHTML = "Inference &amp; Text Completion";
+          startDescription.textContent =
+            "Practice inference questions from real Digital SAT Reading and Writing papers. " +
+            "Each question presents a short passage followed by a question that requires you to draw " +
+            "a logical conclusion or select the most appropriate completion.";
+        }
+      });
+    });
 
     $$(".review-tab").forEach((tab) => {
       tab.addEventListener("click", () => {
@@ -100,7 +136,8 @@
       return;
     }
 
-    const q = questions[state.currentIndex];
+    const qs = getActiveQuestions();
+    const q = qs[state.currentIndex];
     const revealed = state.revealed[q.id];
 
     if (!revealed) {
@@ -143,13 +180,22 @@
   }
 
   function renderQuestion() {
-    const q = questions[state.currentIndex];
-    const total = questions.length;
+    const qs = getActiveQuestions();
+    const q = qs[state.currentIndex];
+    const total = qs.length;
     const revealed = state.revealed[q.id];
 
     questionBadge.textContent = state.currentIndex + 1;
     questionCounter.textContent = `Question ${state.currentIndex + 1} of ${total}`;
     progressFill.style.width = `${((state.currentIndex + 1) / total) * 100}%`;
+
+    if (q.imageUrl) {
+      graphImageSection.classList.remove("hidden");
+      graphImage.src = q.imageUrl;
+    } else {
+      graphImageSection.classList.add("hidden");
+      graphImage.src = "";
+    }
 
     if (state.highlights[q.id]) {
       passageText.innerHTML = state.highlights[q.id];
@@ -221,7 +267,7 @@
   }
 
   function selectChoice(index) {
-    const q = questions[state.currentIndex];
+    const q = getActiveQuestions()[state.currentIndex];
     if (state.revealed[q.id]) return;
 
     state.answers[q.id] = index;
@@ -234,7 +280,8 @@
   }
 
   function handleNext() {
-    const q = questions[state.currentIndex];
+    const qs = getActiveQuestions();
+    const q = qs[state.currentIndex];
 
     if (!state.revealed[q.id]) {
       const selected = state.answers[q.id];
@@ -252,7 +299,7 @@
       return;
     }
 
-    if (state.currentIndex < questions.length - 1) {
+    if (state.currentIndex < qs.length - 1) {
       state.currentIndex++;
       renderQuestion();
     } else {
@@ -304,7 +351,7 @@
 
   function openNavigator() {
     navigatorGrid.innerHTML = "";
-    questions.forEach((q, i) => {
+    getActiveQuestions().forEach((q, i) => {
       const btn = document.createElement("button");
       btn.className = "nav-q-btn";
       btn.textContent = i + 1;
@@ -417,7 +464,7 @@
   }
 
   function saveHighlights() {
-    const q = questions[state.currentIndex];
+    const q = getActiveQuestions()[state.currentIndex];
     state.highlights[q.id] = passageText.innerHTML;
   }
 
@@ -427,12 +474,13 @@
     quizScreen.classList.add("hidden");
     resultsScreen.classList.remove("hidden");
 
-    const total = questions.length;
+    const qs = getActiveQuestions();
+    const total = qs.length;
     let correctCount = 0;
     let incorrectCount = 0;
     let skippedCount = 0;
 
-    questions.forEach((q) => {
+    qs.forEach((q) => {
       const r = state.results[q.id];
       if (r === "correct") correctCount++;
       else if (r === "incorrect") incorrectCount++;
@@ -472,7 +520,7 @@
     const list = $("#review-list");
     list.innerHTML = "";
 
-    questions.forEach((q, i) => {
+    getActiveQuestions().forEach((q, i) => {
       const result = state.results[q.id] || "skipped";
 
       if (filter === "correct" && result !== "correct") return;
@@ -498,6 +546,7 @@
           </div>
         </div>
         <div class="review-card-body">
+          ${q.imageUrl ? `<div class="review-graph-image"><img src="${q.imageUrl}" alt="Data table or graph"></div>` : ""}
           <div class="review-passage">${q.passage}</div>
           <div class="review-question-full" style="font-weight:600;margin-bottom:12px;font-size:0.875rem;">${q.question}</div>
           ${
