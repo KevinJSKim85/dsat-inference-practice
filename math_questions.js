@@ -11,7 +11,7 @@ const mathQuestions = [
       "2π<sup>2</sup>"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use circumference, area, arcs, sectors, and tangent-radius facts.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(D)</b> <i>A</i> = π<i>r</i><sup>2</sup> = π<sup>3</sup> ⇒ <i>r</i><sup>2</sup> = π<sup>2</sup> ⇒ <i>r</i> = π<br><i>C</i> = 2π<i>r</i> = 2π(π) = 2π<sup>2</sup></p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Use circle formulas A = πr<sup>2</sup> and C = 2πr. First solve for r from the area, then plug into circumference.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> πr<sup>2</sup> = π<sup>3</sup>, so r<sup>2</sup> = π<sup>2</sup>.</p><p><strong>Step 2:</strong> r = π (radius is positive).</p><p><strong>Step 3:</strong> C = 2π(π) = 2π<sup>2</sup>.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> π ignores the solved radius r = π.</p><p><strong>(B)</strong> 2π would require r = 1, not π.</p><p><strong>(C)</strong> π<sup>2</sup> is missing the factor 2.</p><p><strong>(D)</strong> 2π<sup>2</sup> matches the full computation.</p>"
   },
   {
     "id": 2,
@@ -25,7 +25,7 @@ const mathQuestions = [
       "40π"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use circumference, area, arcs, sectors, and tangent-radius facts.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(D)</b> The area of the shaded sector is</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Sector area uses the central-angle fraction of the full circle, or Area = (1/2)rL with arc length L. The figure provides the needed measurements.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Read the shaded sector’s central angle and radius from the diagram.</p><p><strong>Step 2:</strong> Apply sector area formula using those values.</p><p><strong>Step 3:</strong> The computed shaded area is 40π square units.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> 4π is too small for the shown sector fraction.</p><p><strong>(B)</strong> 8π is still below the computed area.</p><p><strong>(C)</strong> 20π is exactly half the needed result.</p><p><strong>(D)</strong> 40π matches the figure-based calculation.</p>"
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@ const mathQuestions = [
       "5<i>c</i>"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Relate slope, intercepts, and parallel/perpendicular line rules.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(D)</b> The slope is equal to</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Use slope formula m = (y2 − y1)/(x2 − x1), then set it equal to 1 and solve for a.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> m = (a − c)/(3c − (−c)) = (a − c)/(4c).</p><p><strong>Step 2:</strong> Given m = 1, so (a − c)/(4c) = 1.</p><p><strong>Step 3:</strong> a − c = 4c, so a = 5c.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> a = −3c gives slope −1, not 1.</p><p><strong>(B)</strong> a = 2c gives slope 1/4.</p><p><strong>(C)</strong> a = 3c gives slope 1/2.</p><p><strong>(D)</strong> a = 5c gives slope exactly 1.</p>"
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@ const mathQuestions = [
       "<img src=\"https://images.cracksat.net/digital/br22/e0523-04.jpg\">"
     ],
     "correct": 2,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use circumference, area, arcs, sectors, and tangent-radius facts.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(C)</b> <i>C</i> = 2π<i>r</i> = π<sup>2</sup> ⇒ 2<i>r</i> = π ⇒ <img src=\"https://images.cracksat.net/digital/br22/e0525-01.jpg\"></p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✓ This matches the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Find radius from circumference first: C = 2πr. Then area is A = πr<sup>2</sup>.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> 2πr = π<sup>2</sup>, so r = π/2.</p><p><strong>Step 2:</strong> r<sup>2</sup> = π<sup>2</sup>/4.</p><p><strong>Step 3:</strong> A = π·(π<sup>2</sup>/4) = π<sup>3</sup>/4.</p><p>The answer is <strong>C</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> This image is not π<sup>3</sup>/4.</p><p><strong>(B)</strong> Comes from incorrect radius handling.</p><p><strong>(C)</strong> This image matches π<sup>3</sup>/4.</p><p><strong>(D)</strong> Overestimates area by using a larger r.</p>"
   },
   {
     "id": 5,
@@ -67,7 +67,7 @@ const mathQuestions = [
       "2π"
     ],
     "correct": 0,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use circumference, area, arcs, sectors, and tangent-radius facts.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(A)</b> Draw a diagram. Since the area of square <i>ABCD</i> is 2, <i>AD</i> = <img src=\"https://images.cracksat.net/digital/br22/common10.jpg\">. Then, diameter <i>EF</i> = <img src=\"https://images.cracksat.net/digital/br22/common10.jpg\"> and radius <img src=\"https://images.cracksat.net/digital/br22/e0525-03.jpg\">, so area <img src=\"https://images.cracksat.net/digital/br22/e0525-04.jpg\"></p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✓ This matches the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>For a circle inscribed in a square, diameter equals square side. Use square area to get side length, then circle area.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Square area 2 means side s = √2.</p><p><strong>Step 2:</strong> Circle diameter d = √2, so r = √2/2.</p><p><strong>Step 3:</strong> Area = π(√2/2)<sup>2</sup> = π/2.</p><p>The answer is <strong>A</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> This image is π/2, correct.</p><p><strong>(B)</strong> π would require r = 1.</p><p><strong>(C)</strong> This radical form is not π/2.</p><p><strong>(D)</strong> 2π is four times too large.</p>"
   },
   {
     "id": 6,
@@ -81,7 +81,7 @@ const mathQuestions = [
       "2π"
     ],
     "correct": 1,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use circumference, area, arcs, sectors, and tangent-radius facts.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(B)</b> Draw a diagram. Since the area of square <i>ABCD</i> is 2, <i>AD</i> = <img src=\"https://images.cracksat.net/digital/br22/common10.jpg\">. Then diagonal <img src=\"https://images.cracksat.net/digital/br22/e0538-03.jpg\"> = <img src=\"https://images.cracksat.net/digital/br22/common10.jpg\"> × <img src=\"https://images.cracksat.net/digital/br22/common10.jpg\"> = 2. But <img src=\"https://images.cracksat.net/digital/br22/e0538-03.jpg\"> is also a diameter of the circle, so the diameter is 2 and the radius is 1. Therefore, the area is π(1)<sup>2</sup> = π.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✓ This matches the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>For a square inscribed in a circle, square diagonal is circle diameter.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Square area 2 gives side √2.</p><p><strong>Step 2:</strong> Diagonal = √2·√2 = 2, so circle diameter is 2.</p><p><strong>Step 3:</strong> Radius is 1, so area = π(1)<sup>2</sup> = π.</p><p>The answer is <strong>B</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> π/2 uses wrong diameter relationship.</p><p><strong>(B)</strong> π is exactly correct for r = 1.</p><p><strong>(C)</strong> Does not equal π for this setup.</p><p><strong>(D)</strong> 2π would need r = √2.</p>"
   },
   {
     "id": 7,
@@ -95,7 +95,7 @@ const mathQuestions = [
       "<i>y</i> = -<i>x</i> + 5"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Relate slope, intercepts, and parallel/perpendicular line rules.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(D)</b> Since the line is neither horizontal nor vertical, its equation has the form <i>y</i> = <i>mx</i> + <i>b</i>. Since it crosses the <i>y</i>-axis at (0, 5), <i>b</i> = 5. Since it passes through (0, 5) and (5, 0), its slope is <img src=\"https://images.cracksat.net/digital/br22/e0559-01.jpg\"> and its equation is <i>y</i> = -1<i>x</i> + 5 or <i>y</i> = -<i>x</i> + 5.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Find slope from two intercept points, then use slope-intercept form y = mx + b.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Through (0,5) and (5,0), slope m = (0−5)/(5−0) = −1.</p><p><strong>Step 2:</strong> y-intercept is 5, so b = 5.</p><p><strong>Step 3:</strong> Equation is y = −x + 5.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> x = 5 is vertical, wrong line.</p><p><strong>(B)</strong> y = 5 is horizontal, wrong line.</p><p><strong>(C)</strong> y = x − 5 has slope +1.</p><p><strong>(D)</strong> y = −x + 5 fits both points.</p>"
   },
   {
     "id": 8,
@@ -109,7 +109,7 @@ const mathQuestions = [
       "16π"
     ],
     "correct": 2,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use circumference, area, arcs, sectors, and tangent-radius facts.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(C)</b> If the area of the square is 4, each side is 2, and the length of a diagonal is 2<img src=\"https://images.cracksat.net/digital/br22/common10.jpg\">. The area of a circle whose radius is 2<img src=\"https://images.cracksat.net/digital/br22/common10.jpg\"> is π(2<img src=\"https://images.cracksat.net/digital/br22/common10.jpg\">)<sup>2</sup> = 8π.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✓ This matches the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Use square area to get side, then diagonal. Here the diagonal is the circle radius.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Square area 4 gives side 2.</p><p><strong>Step 2:</strong> Diagonal is 2√2, so r = 2√2.</p><p><strong>Step 3:</strong> Area = π(2√2)<sup>2</sup> = 8π.</p><p>The answer is <strong>C</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> 2π is too small.</p><p><strong>(B)</strong> 4π uses r = 2 incorrectly.</p><p><strong>(C)</strong> 8π matches r = 2√2.</p><p><strong>(D)</strong> 16π is too large for this radius.</p>"
   },
   {
     "id": 9,
@@ -123,7 +123,7 @@ const mathQuestions = [
       "2<i>C</i><sup>2</sup><img src=\"https://images.cracksat.net/digital/br22/root_pi.jpg\">"
     ],
     "correct": 0,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use circumference, area, arcs, sectors, and tangent-radius facts.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(A)</b> <i>C</i> = 2π<i>r</i> ⇒ <img src=\"https://images.cracksat.net/digital/br22/e0525-08.jpg\"></p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✓ This matches the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Express area A in terms of circumference C by eliminating r using C = 2πr.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> r = C/(2π).</p><p><strong>Step 2:</strong> A = π(C/(2π))<sup>2</sup>.</p><p><strong>Step 3:</strong> Simplify to A = C<sup>2</sup>/(4π).</p><p>The answer is <strong>A</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> This image is C<sup>2</sup>/(4π), correct.</p><p><strong>(B)</strong> π is placed incorrectly.</p><p><strong>(C)</strong> Linear in C is impossible for area.</p><p><strong>(D)</strong> Wrong power/scale in C and π.</p>"
   },
   {
     "id": 10,
@@ -137,7 +137,7 @@ const mathQuestions = [
       "40π"
     ],
     "correct": 1,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use circumference, area, arcs, sectors, and tangent-radius facts.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(B)</b> The length of arc <img src=\"https://images.cracksat.net/digital/br22/e0525-05.jpg\">.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✓ This matches the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Arc length is a fraction of the full circumference: L = (θ/360)·2πr.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Use the central angle and radius shown for arc RS.</p><p><strong>Step 2:</strong> Multiply the angle fraction by full circumference.</p><p><strong>Step 3:</strong> The arc length evaluates to 8π.</p><p>The answer is <strong>B</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> 4π is half the needed arc.</p><p><strong>(B)</strong> 8π matches the computed arc length.</p><p><strong>(C)</strong> 20π is too large for the shown arc.</p><p><strong>(D)</strong> 40π is far beyond this arc’s measure.</p>"
   },
   {
     "id": 11,
@@ -151,7 +151,7 @@ const mathQuestions = [
       "<span>$p=\\frac{t}{0.8}$</span>"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Rearrange equations while preserving equivalence.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>To solve for p in 0.8p = t, divide both sides by 0.8.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Start with 0.8p = t.</p><p><strong>Step 2:</strong> Divide by 0.8: p = t/0.8.</p><p><strong>Step 3:</strong> Check with t = 40 gives p = 50, and 0.8·50 = 40.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Subtracting 0.8 is not inverse of multiplying by 0.8.</p><p><strong>(B)</strong> 0.8t multiplies instead of divides.</p><p><strong>(C)</strong> 0.8/t inverts variables incorrectly.</p><p><strong>(D)</strong> t/0.8 is the correct rearrangement.</p>"
   },
   {
     "id": 12,
@@ -165,7 +165,7 @@ const mathQuestions = [
       "2 - π"
     ],
     "correct": 2,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use circumference, area, arcs, sectors, and tangent-radius facts.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(C)</b> Since ℓ is tangent to circle <i>O</i> at <i>A</i>, <img src=\"https://images.cracksat.net/digital/br22/common56.jpg\"> ⊥ ℓ and Δ<i>OAB</i> is an isosceles right triangle. Then m∠<i>O</i> = 45.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✓ This matches the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Radius to tangent is perpendicular. Shaded area = area of right triangle OAB − area of sector AOB.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> OA ⟂ AB and OA = AB = 2, so triangle OAB area is (1/2)(2)(2)=2.</p><p><strong>Step 2:</strong> Triangle is isosceles right, so angle AOB = 45°.</p><p><strong>Step 3:</strong> Sector area is (45/360)·π·2<sup>2</sup> = π/2. Shaded = 2 − π/2.</p><p>The answer is <strong>C</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Pure π-term ignores triangle part.</p><p><strong>(B)</strong> Uses triangle area 4 instead of 2.</p><p><strong>(C)</strong> 2 − π/2 matches exact subtraction.</p><p><strong>(D)</strong> 2 − π subtracts too much sector area.</p>"
   },
   {
     "id": 13,
@@ -179,7 +179,7 @@ const mathQuestions = [
       "<img src=\"https://images.cracksat.net/digital/br22/e0535-07.jpg\">"
     ],
     "correct": 0,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Apply the correct volume formula for the given solid.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(A)</b> Since <i>V</i> = π<i>r</i><sup>2</sup><i>h</i>, you need to express <i>r</i> and <i>h</i> in terms of <i>C</i>. It is given that <i>h</i> = 4<i>C</i>; and since <i>C</i> = 2π<i>r</i>, then <img src=\"https://images.cracksat.net/digital/br22/e0538-01.jpg\">. Therefore,</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✓ This matches the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Cylinder volume V = πr<sup>2</sup>h. Convert r and h into C using C = 2πr and h = 4C.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> h = 4C.</p><p><strong>Step 2:</strong> r = C/(2π).</p><p><strong>Step 3:</strong> V = π(C/(2π))<sup>2</sup>(4C) = C<sup>3</sup>/π.</p><p>The answer is <strong>A</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> This image matches C<sup>3</sup>/π.</p><p><strong>(B)</strong> Uses wrong π placement.</p><p><strong>(C)</strong> Has incorrect power of C.</p><p><strong>(D)</strong> Mis-simplifies constants from substitution.</p>"
   },
   {
     "id": 14,
@@ -193,7 +193,7 @@ const mathQuestions = [
       "108<img src=\"https://images.cracksat.net/digital/br22/common10.jpg\">"
     ],
     "correct": 1,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Apply the correct volume formula for the given solid.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(B)</b> Sketch the pyramid.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✓ This matches the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Pyramid volume is (1/3)Bh. Base is square area 36, and equilateral side faces let us solve height using a right triangle.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Base side is 6. Slant edge from apex to a base vertex is also 6 (equilateral faces).</p><p><strong>Step 2:</strong> Center-to-vertex distance is half diagonal: 3√2.</p><p><strong>Step 3:</strong> h = √(6<sup>2</sup> − (3√2)<sup>2</sup>) = 3√2. Volume = (1/3)(36)(3√2)=36√2.</p><p>The answer is <strong>B</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Omits height factor.</p><p><strong>(B)</strong> 36√2 is the exact volume.</p><p><strong>(C)</strong> Misses the divide-by-3 in pyramid formula.</p><p><strong>(D)</strong> Triple the correct value.</p>"
   },
   {
     "id": 15,
@@ -207,7 +207,7 @@ const mathQuestions = [
       "<span>$-3x^{2}+4x+5$</span>"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Apply exponent product, quotient, and power rules consistently.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Combine like terms carefully, including signs.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Quadratics: 2x<sup>2</sup> − 5x<sup>2</sup> = −3x<sup>2</sup>.</p><p><strong>Step 2:</strong> Linear terms: 3x − (−x) = 4x.</p><p><strong>Step 3:</strong> Constants: −2 − (−7) = 5. Result: −3x<sup>2</sup> + 4x + 5.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Wrong signs and coefficients.</p><p><strong>(B)</strong> x<sup>2</sup> sign should be negative.</p><p><strong>(C)</strong> Uses incorrect linear and constant simplification.</p><p><strong>(D)</strong> Matches term-by-term combination.</p>"
   },
   {
     "id": 16,
@@ -221,7 +221,7 @@ const mathQuestions = [
       "<img src=\"https://images.cracksat.net/digital/br22/common16.jpg\">"
     ],
     "correct": 2,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Relate slope, intercepts, and parallel/perpendicular line rules.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(C)</b> By KEY FACT N4 , the slope of the line through (-2, 3) and (2, -3) is</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✓ This matches the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Perpendicular slopes are negative reciprocals.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Slope through (−2,3) and (2,−3) is (−3−3)/(2−(−2)) = −6/4 = −3/2.</p><p><strong>Step 2:</strong> Perpendicular slope is 2/3.</p><p><strong>Step 3:</strong> The point (3,2) is for line equation, not slope value.</p><p>The answer is <strong>C</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Keeps original slope, not perpendicular.</p><p><strong>(B)</strong> Sign/reciprocal applied incorrectly.</p><p><strong>(C)</strong> This image is 2/3, correct.</p><p><strong>(D)</strong> Not the negative reciprocal of −3/2.</p>"
   },
   {
     "id": 17,
@@ -235,7 +235,7 @@ const mathQuestions = [
       "Undefined"
     ],
     "correct": 0,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Relate slope, intercepts, and parallel/perpendicular line rules.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(A)</b> The formula for the slope is <img src=\"https://images.cracksat.net/digital/br22/e0557-02.jpg\">; but before using it, look at the question again.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✓ This matches the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Slope is Δy/Δx. If y-values are equal, slope is 0 (horizontal line).</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> One point is (a,b), and the second point shown has the same y-coordinate b.</p><p><strong>Step 2:</strong> So Δy = b − b = 0.</p><p><strong>Step 3:</strong> m = 0/Δx = 0.</p><p>The answer is <strong>A</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> 0 is correct for equal y-values.</p><p><strong>(B)</strong> Nonzero fraction requires nonzero Δy.</p><p><strong>(C)</strong> Also nonzero; inconsistent with horizontal line.</p><p><strong>(D)</strong> Undefined would require equal x-values.</p>"
   },
   {
     "id": 18,
@@ -249,7 +249,7 @@ const mathQuestions = [
       "144π"
     ],
     "correct": 1,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Apply the correct volume formula for the given solid.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(B)</b> Sketch the triangle and cone.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✓ This matches the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Rotating a right triangle about one leg forms a cone with height = that leg and radius = the other leg.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Legs are both 6.</p><p><strong>Step 2:</strong> After rotation about one leg, h = 6 and r = 6.</p><p><strong>Step 3:</strong> V = (1/3)πr<sup>2</sup>h = (1/3)π(36)(6)=72π.</p><p>The answer is <strong>B</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Adds unnecessary √2 from hypotenuse.</p><p><strong>(B)</strong> 72π is exact.</p><p><strong>(C)</strong> Also incorrectly includes √2.</p><p><strong>(D)</strong> Double the correct volume.</p>"
   },
   {
     "id": 19,
@@ -263,7 +263,7 @@ const mathQuestions = [
       "2<img src=\"https://images.cracksat.net/digital/br22/common10.jpg\"> + 2<img src=\"https://images.cracksat.net/digital/br22/common11.jpg\">"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use fixed 30-60-90 and 45-45-90 side ratios.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(D)</b></p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>The figure is built from 30-60-90 and 45-45-90 triangles, so side lengths of shaded triangle ABF are surd sums from fixed ratios.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Use the marked special triangles to find each side of ABF in radical form.</p><p><strong>Step 2:</strong> Add the three side lengths exactly (not decimal approximations).</p><p><strong>Step 3:</strong> The perimeter simplifies to 2√2 + 2√3.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Misses one of the radical contributions.</p><p><strong>(B)</strong> Includes an extra constant 1 not in final side-sum.</p><p><strong>(C)</strong> Includes constant 2 instead of doubling surd terms.</p><p><strong>(D)</strong> 2√2 + 2√3 matches the computed perimeter.</p>"
   },
   {
     "id": 20,
@@ -277,7 +277,7 @@ const mathQuestions = [
       "<span>$4x=3$</span>"
     ],
     "correct": 2,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Rearrange equations while preserving equivalence.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✓ This matches the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Equivalent equations come from valid inverse operations on both sides.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Subtract 6 from both sides of the given equation.</p><p><strong>Step 2:</strong> The equivalent form is 4x = 12.</p><p><strong>Step 3:</strong> This has the same x-solution as the original equation.</p><p>The answer is <strong>C</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> 4x = 108 gives a different x.</p><p><strong>(B)</strong> 4x = 24 gives a different x.</p><p><strong>(C)</strong> 4x = 12 is the correct equivalent equation.</p><p><strong>(D)</strong> 4x = 3 is not equivalent.</p>"
   },
   {
     "id": 21,
@@ -291,7 +291,7 @@ const mathQuestions = [
       "<img src=\"https://images.cracksat.net/digital/br22/common16.jpg\">"
     ],
     "correct": 0,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Relate slope, intercepts, and parallel/perpendicular line rules.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(A)</b> Use TACTIC 1 : draw a diagram. Quickly sketch the line through (-2, 3) and (2, -3) and the line parallel to it that goes through (3, 2).</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✓ This matches the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Parallel lines have identical slope.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Slope through (−2,3) and (2,−3) is (−3−3)/(2−(−2)) = −6/4 = −3/2.</p><p><strong>Step 2:</strong> A parallel line through (3,2) keeps slope −3/2.</p><p><strong>Step 3:</strong> So the required slope is −3/2.</p><p>The answer is <strong>A</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> This image corresponds to −3/2.</p><p><strong>(B)</strong> Reciprocal/sign-changed slope is perpendicular, not parallel.</p><p><strong>(C)</strong> Positive slope contradicts given line.</p><p><strong>(D)</strong> Not equal to −3/2.</p>"
   },
   {
     "id": 22,
@@ -305,7 +305,7 @@ const mathQuestions = [
       "<span>$4a^{2}$</span>"
     ],
     "correct": 1,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Rearrange equations while preserving equivalence.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✓ This matches the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Isolate a radical, then square both sides to solve for the variable expression.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> From 2√x = a, divide by 2: √x = a/2.</p><p><strong>Step 2:</strong> Square both sides: x = (a/2)<sup>2</sup>.</p><p><strong>Step 3:</strong> x = a<sup>2</sup>/4.</p><p>The answer is <strong>B</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> a/2 is √x, not x.</p><p><strong>(B)</strong> a<sup>2</sup>/4 is correct after squaring.</p><p><strong>(C)</strong> a<sup>2</sup>/2 is twice too large.</p><p><strong>(D)</strong> 4a<sup>2</sup> is the opposite scaling.</p>"
   },
   {
     "id": 23,
@@ -319,7 +319,7 @@ const mathQuestions = [
       "36<img src=\"https://images.cracksat.net/digital/br22/common11.jpg\">"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use polygon angle-sum relationships such as $180(n-2)$.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(D)</b> Draw a diagram and label it. Since Δ<i>BCD</i> is a 30-60-90 right triangle, <i>BC</i> is 6 (half the hypotenuse) and <i>CD</i> is 6<img src=\"https://images.cracksat.net/digital/br22/common11.jpg\">.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>A diagonal and 30° angle create a 30-60-90 triangle. Rectangle area is product of side lengths.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Hypotenuse is diagonal 12.</p><p><strong>Step 2:</strong> In 30-60-90 triangle, short leg = 6 and long leg = 6√3.</p><p><strong>Step 3:</strong> Rectangle area = 6·6√3 = 36√3.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> 18 is too small.</p><p><strong>(B)</strong> 72 ignores the √3 ratio.</p><p><strong>(C)</strong> 18√3 is only half the rectangle area.</p><p><strong>(D)</strong> 36√3 is correct.</p>"
   },
   {
     "id": 24,
@@ -333,7 +333,7 @@ const mathQuestions = [
       "<span>$5.62a-12.97b=300$</span>"
     ],
     "correct": 2,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Rearrange equations while preserving equivalence.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✓ This matches the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Total cost equation: (price of A)(shares a) + (price of B)(shares b) = 300.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Stock A contributes 5.62a dollars.</p><p><strong>Step 2:</strong> Stock B contributes 12.97b dollars.</p><p><strong>Step 3:</strong> Sum gives 5.62a + 12.97b = 300.</p><p>The answer is <strong>C</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Prices are assigned to wrong variables.</p><p><strong>(B)</strong> Uses subtraction; both costs must add.</p><p><strong>(C)</strong> Correct additive cost model.</p><p><strong>(D)</strong> Wrong signs and wrong assignment.</p>"
   },
   {
     "id": 25,
@@ -347,7 +347,7 @@ const mathQuestions = [
       "<span>$v(t)=1,385+69t$</span>"
     ],
     "correct": 0,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Apply the correct volume formula for the given solid.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✓ This matches the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Linear decay model: v(t) = initial amount + (rate)t, with negative rate for draining.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Initial volume is 1,385, so intercept is 1385.</p><p><strong>Step 2:</strong> Pump removes 20 ft<sup>3</sup>/min, so slope is −20.</p><p><strong>Step 3:</strong> v(t) = 1,385 − 20t.</p><p>The answer is <strong>A</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Correct initial value and negative rate.</p><p><strong>(B)</strong> Uses 69 as rate instead of time limit.</p><p><strong>(C)</strong> Positive slope means filling, not emptying.</p><p><strong>(D)</strong> Wrong sign and wrong rate.</p>"
   },
   {
     "id": 26,
@@ -361,7 +361,7 @@ const mathQuestions = [
       "<span>$B=1.84(212)-1,000h$</span>"
     ],
     "correct": 1,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Roots are the $x$-values where the expression equals $0$.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✓ This matches the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Convert 1.84°F per 1,000 feet into per-foot rate: 0.00184°F per foot, then use linear model with sea-level intercept 212.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> At h = 0, B = 212.</p><p><strong>Step 2:</strong> Boiling point drops, so slope is negative: −0.00184 per foot.</p><p><strong>Step 3:</strong> B = 212 − 0.00184h.</p><p>The answer is <strong>B</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Treats h as thousands of feet.</p><p><strong>(B)</strong> Correct per-foot conversion and sign.</p><p><strong>(C)</strong> Wrong form; gives B = 0 at sea level.</p><p><strong>(D)</strong> Incorrect constants/units.</p>"
   },
   {
     "id": 27,
@@ -375,7 +375,7 @@ const mathQuestions = [
       "(<i>x</i> - 1)<sup>2</sup> + (<i>y</i> + 1)<sup>2</sup> = 5"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use $(x-h)^2 + (y-k)^2 = r^2$ and complete the square when needed.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(D)</b> From the solution to Question 11, above, the radius of circle <i>O</i> is <img src=\"https://images.cracksat.net/digital/br22/e0559-07.jpg\">. From the alternative solution to Question 11, the center is at (1, -1). Finally, by KEY FACT J11 , the equation of circle <i>O</i> is:</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Use midpoint for center and distance formula for diameter/radius in circle standard form.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Midpoint of A(−1,0) and B(3,−2) is (1,−1), so center is (1,−1).</p><p><strong>Step 2:</strong> AB = √((4)<sup>2</sup> + (−2)<sup>2</sup>) = √20 = 2√5, so r = √5.</p><p><strong>Step 3:</strong> Equation: (x−1)<sup>2</sup> + (y+1)<sup>2</sup> = 5.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Wrong center signs and right side.</p><p><strong>(B)</strong> Center right but radius term wrong.</p><p><strong>(C)</strong> Radius right but center wrong.</p><p><strong>(D)</strong> Correct center and r<sup>2</sup>.</p>"
   },
   {
     "id": 28,
@@ -389,7 +389,7 @@ const mathQuestions = [
       "<span>$\\frac{2}{3x}$</span>"
     ],
     "correct": 2,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Apply exponent product, quotient, and power rules consistently.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✓ This matches the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Add fractions with common denominator.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Rewrite 1/x as 2/(2x).</p><p><strong>Step 2:</strong> Add: 2/(2x) + 1/(2x) = 3/(2x).</p><p><strong>Step 3:</strong> Simplified expression is 3/(2x).</p><p>The answer is <strong>C</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Keeps only first fraction.</p><p><strong>(B)</strong> Keeps only second fraction.</p><p><strong>(C)</strong> Correct sum with denominator 2x.</p><p><strong>(D)</strong> Reciprocal-type mistake.</p>"
   },
   {
     "id": 29,
@@ -403,7 +403,7 @@ const mathQuestions = [
       "<span>$x^{\\frac{25}{3}}$</span>"
     ],
     "correct": 0,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Apply exponent product, quotient, and power rules consistently.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✓ This matches the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>When multiplying same base x, add exponents, including fractional exponents.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Read the two x-exponents in the product.</p><p><strong>Step 2:</strong> Add them: 3/5 + 1/5 = 4/5.</p><p><strong>Step 3:</strong> Equivalent expression is x<sup>4/5</sup>.</p><p>The answer is <strong>A</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> x<sup>4/5</sup> matches exponent addition.</p><p><strong>(B)</strong> 5/4 is an inversion error.</p><p><strong>(C)</strong> 3/25 comes from wrong operation on exponents.</p><p><strong>(D)</strong> 25/3 is unrelated to the sum.</p>"
   },
   {
     "id": 30,
@@ -417,7 +417,7 @@ const mathQuestions = [
       "<span>$z+c=150.32$</span><br><span>$0.99z+1.69c=108$</span>"
     ],
     "correct": 1,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Identify one, none, or infinitely many solutions from equation relationships.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✓ This matches the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Use one equation for total pounds and one for total revenue, with correct variable-price pairing.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Total weight: z + c = 108.</p><p><strong>Step 2:</strong> Total money: 1.69z + 0.99c = 150.32.</p><p><strong>Step 3:</strong> This exact pair is the correct system.</p><p>The answer is <strong>B</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Swaps totals 108 and 150.32.</p><p><strong>(B)</strong> Correct equations from context.</p><p><strong>(C)</strong> Swaps the produce prices.</p><p><strong>(D)</strong> Wrong totals and wrong pairing.</p>"
   },
   {
     "id": 31,
@@ -431,7 +431,7 @@ const mathQuestions = [
       "<i>c + d</i>"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Mean is sum divided by count.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(D)</b> Calculate the average:</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Mean of four numbers is (sum)/4; substitute given relation before dividing.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Given a + b = 3(c + d).</p><p><strong>Step 2:</strong> Then a + b + c + d = 3(c + d) + (c + d) = 4(c + d).</p><p><strong>Step 3:</strong> Mean = [4(c + d)]/4 = c + d.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Not equal to c + d after simplification.</p><p><strong>(B)</strong> Wrong coefficient from substitution.</p><p><strong>(C)</strong> Wrong divisor/combination.</p><p><strong>(D)</strong> Exactly equals the arithmetic mean.</p>"
   },
   {
     "id": 32,
@@ -445,7 +445,7 @@ const mathQuestions = [
       "<span>$\\sqrt{6}$</span>"
     ],
     "correct": 2,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Work with quadratic structure through factoring or vertex methods.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✓ This matches the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Solve quadratic by expansion and factoring.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> x(x+2)=8 → x<sup>2</sup>+2x−8=0.</p><p><strong>Step 2:</strong> Factor: (x+4)(x−2)=0.</p><p><strong>Step 3:</strong> Solutions are x = −4 and x = 2.</p><p>The answer is <strong>C</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> 8 and 6 do not satisfy equation.</p><p><strong>(B)</strong> 4 and −2 are incorrect roots.</p><p><strong>(C)</strong> −4 and 2 are the full solution set.</p><p><strong>(D)</strong> Single radical value is not all solutions.</p>"
   },
   {
     "id": 33,
@@ -459,7 +459,7 @@ const mathQuestions = [
       "$2,750"
     ],
     "correct": 0,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Read median and quartiles from the box plot landmarks.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✓ This matches the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>The median in a box plot is the vertical line inside the box and must lie between Q1 and Q3 on the scale.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Read where the median marker sits on the insurance-cost axis.</p><p><strong>Step 2:</strong> It is around the low 1600s, not around 2000+.</p><p><strong>Step 3:</strong> The only plausible option is $1,625.</p><p>The answer is <strong>A</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> $1,625 fits the plotted median location.</p><p><strong>(B)</strong> $2,000 is too far right of the median line.</p><p><strong>(C)</strong> $2,100 is also too high for the median mark.</p><p><strong>(D)</strong> $2,750 is near upper extreme, not center.</p>"
   },
   {
     "id": 34,
@@ -473,7 +473,7 @@ const mathQuestions = [
       "The number of water hyacinths increased by 2 every <span>$t$</span>"
     ],
     "correct": 1,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use exponential models such as $A(t)=A_0(1+r)^t$.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✓ This matches the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>In A(t)=12·2<sup>t/6</sup>, base 2 means doubling and denominator 6 means every 6 time units (days).</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> At t=0, A=12 (initial count).</p><p><strong>Step 2:</strong> Increase t by 6: A(t+6)=12·2<sup>(t+6)/6</sup>=2A(t).</p><p><strong>Step 3:</strong> So the amount doubles every 6 days.</p><p>The answer is <strong>B</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Says doubles t times; exponent is t/6, not t.</p><p><strong>(B)</strong> Correct interpretation of exponential model.</p><p><strong>(C)</strong> Describes additive +2 growth, not doubling.</p><p><strong>(D)</strong> Also additive and incorrect.</p>"
   },
   {
     "id": 35,
@@ -487,7 +487,7 @@ const mathQuestions = [
       "8"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Mean is sum divided by count.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(D)</b> To find the average, take the sum of the three polynomials and then divide by 3. The sum is (<i>x</i><sup>2</sup> + 2<i>x</i> - 3) + (3<i>x</i><sup>2</sup> - 2<i>x</i> - 3) + (30 - 4<i>x</i><sup>2</sup>) = 24, and 24 ÷ 3 = 8.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Arithmetic mean of three expressions is their sum divided by 3.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Add polynomials: (x<sup>2</sup>+2x−3)+(3x<sup>2</sup>−2x−3)+(30−4x<sup>2</sup>).</p><p><strong>Step 2:</strong> x<sup>2</sup> terms cancel, x terms cancel, constants sum to 24.</p><p><strong>Step 3:</strong> Mean = 24/3 = 8.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Keeps terms that cancel to zero.</p><p><strong>(B)</strong> Also fails to cancel correctly.</p><p><strong>(C)</strong> −12 has wrong sign and size.</p><p><strong>(D)</strong> 8 is exactly the average.</p>"
   },
   {
     "id": 36,
@@ -501,7 +501,7 @@ const mathQuestions = [
       "60"
     ],
     "correct": 2,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use fixed 30-60-90 and 45-45-90 side ratios.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(C)</b> Triangle <i>ADB</i> is a right triangle whose hypotenuse is 10 and one of whose legs is 6, so this is a 3<i>x</i>-4<i>x</i>-5<i>x</i> triangle with <i>x</i> = 2, and <i>AD</i> = 8. Now Δ<i>ADC</i> is a 30-60-90 triangle, whose shorter leg is 8. Therefore, hypotenuse <i>AC</i> is 16, and leg <i>CD</i> is 8<img src=\"https://images.cracksat.net/digital/br22/common11.jpg\">, so the perimeter is 16 + 10 + 6 + 8<img src=\"https://images.cracksat.net/digital/br22/common11.jpg\"> = 32 + 8<img src=\"https://images.cracksat.net/digital/br22/common11.jpg\">.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✓ This matches the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Use 3-4-5 and 30-60-90 triangle relationships from the diagram, then add sides of ΔABC.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> In ΔADB, hypotenuse 10 and leg 6 imply AD=8 (scaled 3-4-5).</p><p><strong>Step 2:</strong> In 30-60-90 ΔADC with short leg 8, AC=16 and CD=8√3.</p><p><strong>Step 3:</strong> Perimeter ΔABC = AB + BC + AC = 10 + (6+8√3) + 16 = 32 + 8√3.</p><p>The answer is <strong>C</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Omits the radical segment.</p><p><strong>(B)</strong> Uses √2 instead of √3.</p><p><strong>(C)</strong> 32 + 8√3 matches derived side lengths.</p><p><strong>(D)</strong> 60 is not exact and overestimates.</p>"
   },
   {
     "id": 37,
@@ -515,7 +515,7 @@ const mathQuestions = [
       "There is not enough information available to compare the standard deviations of the two data sets."
     ],
     "correct": 0,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Mean is sum divided by count.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✓ This matches the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Standard deviation measures spread around the mean. More spread-out data means larger standard deviation.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Compare how far values in each set lie from their center in the table.</p><p><strong>Step 2:</strong> Data set B shows larger overall spread than data set A.</p><p><strong>Step 3:</strong> Therefore SD(B) > SD(A).</p><p>The answer is <strong>A</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Correct: set B is more dispersed.</p><p><strong>(B)</strong> Opposite of what spread indicates.</p><p><strong>(C)</strong> Equal SD would require similar spread patterns.</p><p><strong>(D)</strong> Table gives enough information to compare spread.</p>"
   },
   {
     "id": 38,
@@ -529,7 +529,7 @@ const mathQuestions = [
       "If <span>$r=15%$</span>"
     ],
     "correct": 1,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use exponential models such as $A(t)=A_0(1+r)^t$.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Compute the target value.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✓ This matches the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Future value with fixed years is exponential in interest rate: v = 1000(1+r)<sup>20</sup>. Exponential curves rise faster as r increases.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> From the graph, v increases as r increases.</p><p><strong>Step 2:</strong> The curve bends upward, showing larger gains at higher r.</p><p><strong>Step 3:</strong> So the true statement is the accelerating-increase description.</p><p>The answer is <strong>B</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Does not match the upward-curving trend.</p><p><strong>(B)</strong> Matches exponential shape shown.</p><p><strong>(C)</strong> Claims non-increasing behavior, contradicted by graph.</p><p><strong>(D)</strong> Specific value claim at 15% does not match plotted value.</p>"
   },
   {
     "id": 39,
@@ -543,7 +543,7 @@ const mathQuestions = [
       "13"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use fixed 30-60-90 and 45-45-90 side ratios.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(D)</b> Use the Pythagorean theorem twice, unless you recognize the common right triangles in this figure (<i>which you should</i>). Since <i>PR</i> = 20 and <i>QR</i> = 16, Δ<i>PQR</i> is a 3<i>x</i>-4<i>x</i>-5<i>x</i> right triangle with <i>x</i> = 4. Then <i>PQ</i> = 12, and Δ<i>PQS</i> is a right triangle whose legs are 5 and 12. The hypotenuse, <i>PS</i>, therefore, is 13. [If you had difficulty with this question, review the material, but in the meantime remember TACTIC 2 : trust the diagram. <img src=\"https://images.cracksat.net/digital/br22/e0500-03.jpg\"> is longer than <img src=\"https://images.cracksat.net/digital/br22/e0500-04.jpg\">, so you can eliminate (A), (B), and (C). The answer must be (D).]</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Apply Pythagorean theorem in nested right triangles.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> In ΔPQR: PR=20, QR=16, so PQ=√(20<sup>2</sup>−16<sup>2</sup>)=12.</p><p><strong>Step 2:</strong> In ΔPQS (right triangle), legs are 12 and 5.</p><p><strong>Step 3:</strong> PS=√(12<sup>2</sup>+5<sup>2</sup>)=√169=13.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> 5√5 is not √169.</p><p><strong>(B)</strong> 10 is too short for hypotenuse with leg 12.</p><p><strong>(C)</strong> 11 is also too short.</p><p><strong>(D)</strong> 13 is exact.</p>"
   },
   {
     "id": 40,
@@ -557,7 +557,7 @@ const mathQuestions = [
       "16"
     ],
     "correct": 2,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use fixed 30-60-90 and 45-45-90 side ratios.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(C)</b> Each of the four small triangles is a 45-45-90 right triangle whose hypotenuse is 2. Therefore, each leg is <img src=\"https://images.cracksat.net/digital/br22/e0513-01.jpg\">. The perimeter of each small triangle is 2 + 2<img src=\"https://images.cracksat.net/digital/br22/common10.jpg\">, and the sum of the perimeters is 4 times as great: 8 + 8<img src=\"https://images.cracksat.net/digital/br22/common10.jpg\">.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✓ This matches the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Diagonals split square into four congruent 45-45-90 triangles. Sum of perimeters is 4 times one small perimeter.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Each small triangle has hypotenuse 2.</p><p><strong>Step 2:</strong> Legs are 2/√2 = √2 each.</p><p><strong>Step 3:</strong> One perimeter = 2+2√2, so total = 4(2+2√2)=8+8√2.</p><p>The answer is <strong>C</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Only one triangle’s perimeter.</p><p><strong>(B)</strong> Doubles constant but not full radical part.</p><p><strong>(C)</strong> 8 + 8√2 is correct for four triangles.</p><p><strong>(D)</strong> Ignores √2 edge lengths.</p>"
   },
   {
     "id": 41,
@@ -571,7 +571,7 @@ const mathQuestions = [
       "The standard deviation of both data sets cannot be calculated."
     ],
     "correct": 0,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Mean is sum divided by count.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>Answer Explanation: <b>(A)</b> The standard deviation is a measure of how far the data set values are from the mean. In the data set for College B, most of the data are in three of the five possible values, which are the three values closest to the mean. In the data set for College A, the data are more spread out, with many values at the minimum and maximum values. Therefore, by observation, the data for College A have a larger standard deviation.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✓ This matches the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Larger standard deviation corresponds to a distribution that is more spread from its mean.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Compare how concentrated each college’s major counts are in their tables.</p><p><strong>Step 2:</strong> College A has more extreme category values and wider spread.</p><p><strong>Step 3:</strong> Therefore College A has larger standard deviation.</p><p>The answer is <strong>A</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Correct: College A is more dispersed.</p><p><strong>(B)</strong> Opposite of observed spread.</p><p><strong>(C)</strong> Not same spread pattern, so not same SD.</p><p><strong>(D)</strong> Data provided is sufficient for SD comparison.</p>"
   },
   {
     "id": 42,
@@ -585,7 +585,7 @@ const mathQuestions = [
       "<img src=\"https://images.cracksat.net/digital/br22/e0498-03.jpg\">"
     ],
     "correct": 1,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use fixed 30-60-90 and 45-45-90 side ratios.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(B)</b> The area of <img src=\"https://images.cracksat.net/digital/br22/e0501-02.jpg\">.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✓ This matches the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Triangle area formula A = (1/2)bh, with base/height derived from the special-triangle partition in the image.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Use given 30-60-90 and 45-45-90 pieces to determine shaded triangle ABF base and height.</p><p><strong>Step 2:</strong> Substitute into A=(1/2)bh.</p><p><strong>Step 3:</strong> The exact area simplifies to 1.</p><p>The answer is <strong>B</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> This image expression is not equal to 1.</p><p><strong>(B)</strong> 1 matches the computed area.</p><p><strong>(C)</strong> Uses incorrect segment as height.</p><p><strong>(D)</strong> Overestimates from wrong pair of dimensions.</p>"
   },
   {
     "id": 43,
@@ -599,7 +599,7 @@ const mathQuestions = [
       "64<i>x</i><sup>6</sup>"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Apply exponent product, quotient, and power rules consistently.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>(D) Simplify by combining the like terms within the parentheses:</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Combine like terms first, then raise to a power.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> x<sup>2</sup> + 3x<sup>2</sup> = 4x<sup>2</sup>.</p><p><strong>Step 2:</strong> (4x<sup>2</sup>)<sup>3</sup> = 4<sup>3</sup>(x<sup>2</sup>)<sup>3</sup>.</p><p><strong>Step 3:</strong> 4<sup>3</sup>=64 and (x<sup>2</sup>)<sup>3</sup>=x<sup>6</sup>, so result is 64x<sup>6</sup>.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Not equal to 64x<sup>6</sup>.</p><p><strong>(B)</strong> Uses coefficient 27 incorrectly.</p><p><strong>(C)</strong> 28x<sup>6</sup> from wrong arithmetic.</p><p><strong>(D)</strong> 64x<sup>6</sup> is exact.</p>"
   },
   {
     "id": 44,
@@ -613,7 +613,7 @@ const mathQuestions = [
       "18 + 6<img src=\"https://images.cracksat.net/digital/br22/common11.jpg\">"
     ],
     "correct": 2,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use polygon angle-sum relationships such as $180(n-2)$.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(C)</b> The perimeter of the rectangle is 2(ℓ + <i>w</i>) = 2(6 + 6<img src=\"https://images.cracksat.net/digital/br22/common11.jpg\">) = 12 + 12<img src=\"https://images.cracksat.net/digital/br22/common11.jpg\">.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✓ This matches the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Use 30-60-90 side ratios from diagonal 12, then perimeter P=2(l+w).</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Sides are 6 and 6√3.</p><p><strong>Step 2:</strong> P = 2(6 + 6√3).</p><p><strong>Step 3:</strong> P = 12 + 12√3.</p><p>The answer is <strong>C</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Too small for these side lengths.</p><p><strong>(B)</strong> Assumes both sides are 6.</p><p><strong>(C)</strong> Exact perimeter from formula.</p><p><strong>(D)</strong> Incomplete multiplication by 2.</p>"
   },
   {
     "id": 45,
@@ -627,7 +627,7 @@ const mathQuestions = [
       "3<img src=\"https://images.cracksat.net/digital/br22/common10.jpg\">"
     ],
     "correct": 0,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use polygon angle-sum relationships such as $180(n-2)$.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(A)</b> The area of Δ<i>ABD</i> = <img src=\"https://images.cracksat.net/digital/br22/common14.jpg\">(2)(2) = 2, and the area of Δ<i>AMN</i> = <img src=\"https://images.cracksat.net/digital/br22/common14.jpg\">(1)(1) = 0.5. The area of the shaded region is 2 - 0.5 = 1.5.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✓ This matches the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Shaded area is difference of two triangle areas; midpoint information gives exact lengths.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Area of ΔABD = (1/2)(2)(2)=2.</p><p><strong>Step 2:</strong> M and N are midpoints, so AM=AN=1 and area of ΔAMN=(1/2)(1)(1)=0.5.</p><p><strong>Step 3:</strong> Shaded area = 2 − 0.5 = 1.5.</p><p>The answer is <strong>A</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> 1.5 equals the computed difference.</p><p><strong>(B)</strong> 1.75 subtracts too little.</p><p><strong>(C)</strong> 2√2 is not this area.</p><p><strong>(D)</strong> 3√2 exceeds feasible region size.</p>"
   },
   {
     "id": 46,
@@ -641,7 +641,7 @@ const mathQuestions = [
       "5"
     ],
     "correct": 1,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use polygon angle-sum relationships such as $180(n-2)$.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(B)</b> Since <i>M</i> and <i>N</i> are midpoints of sides of length 2, <i>AM, MB, AN</i>, and <i>ND</i> are each equal to 1. Also, <i>MN</i> = <img src=\"https://images.cracksat.net/digital/br22/common10.jpg\">, since it's the hypotenuse of an isosceles right triangle whose legs are 1; and <i>BD</i> = 2<img src=\"https://images.cracksat.net/digital/br22/common10.jpg\">, since it's the hypotenuse of an isosceles right triangle whose legs are 2. Then, the perimeter of the shaded region is 1 + <img src=\"https://images.cracksat.net/digital/br22/common10.jpg\"> + 1 + 2<img src=\"https://images.cracksat.net/digital/br22/common10.jpg\"> = 2 + 3<img src=\"https://images.cracksat.net/digital/br22/common10.jpg\">.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✓ This matches the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Perimeter is sum of boundary segments. Use midpoint lengths and right-triangle diagonals.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> AM=AN=1 because side length is 2 and M,N are midpoints.</p><p><strong>Step 2:</strong> MN=√2 (legs 1 and 1), and BD=2√2 (square diagonal).</p><p><strong>Step 3:</strong> Perimeter = 1 + √2 + 1 + 2√2 = 2 + 3√2.</p><p>The answer is <strong>B</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Misses radical segments.</p><p><strong>(B)</strong> 2 + 3√2 matches full boundary sum.</p><p><strong>(C)</strong> Coefficients on constant and radical are swapped.</p><p><strong>(D)</strong> 5 underestimates because 3√2 ≈ 4.24.</p>"
   },
   {
     "id": 47,
@@ -655,7 +655,7 @@ const mathQuestions = [
       "2/<i>k</i> = <i>X</i>"
     ],
     "correct": 3,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Relate slope, intercepts, and parallel/perpendicular line rules.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p>(D) 2/<i>k</i> = <i>x</i> is undefined if <i>k</i> = 0. Dividing by 0 results in an undefined solution. All of the other equations have a solution for x when <i>k</i> = 0.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✓ This matches the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>The only invalid case when k=0 is division by zero.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> If k=0, then kx=0 is valid (true for all x).</p><p><strong>Step 2:</strong> 3=k−x gives x=−3, and 4k+x=7 gives x=7; both defined.</p><p><strong>Step 3:</strong> 2/k=x becomes 2/0=x, undefined.</p><p>The answer is <strong>D</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Defined when k=0.</p><p><strong>(B)</strong> Defined with unique x.</p><p><strong>(C)</strong> Defined with unique x.</p><p><strong>(D)</strong> Undefined due to division by zero.</p>"
   },
   {
     "id": 48,
@@ -669,7 +669,7 @@ const mathQuestions = [
       "100 × <img src=\"https://images.cracksat.net/digital/br22/e0590-02.jpg\">"
     ],
     "correct": 2,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use exponential models such as $A(t)=A_0(1+r)^t$.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(C)</b> Since <i>t</i> months is <img src=\"https://images.cracksat.net/digital/br22/e0592-01.jpg\"> years, the population triples <img src=\"https://images.cracksat.net/digital/br22/e0592-01.jpg\"> times. After <i>t</i> months, the population will be 100 × <img src=\"https://images.cracksat.net/digital/br22/e0592-02.jpg\">.</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✓ This matches the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Tripling each year means multiply by 3 for each year elapsed. Convert months to years with t/12.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Initial population is 100.</p><p><strong>Step 2:</strong> After t months, elapsed years = t/12.</p><p><strong>Step 3:</strong> Population = 100·3<sup>t/12</sup>.</p><p>The answer is <strong>C</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Treats t as years, not months.</p><p><strong>(B)</strong> Uses incorrect base 12.</p><p><strong>(C)</strong> This image matches 100·3<sup>t/12</sup>.</p><p><strong>(D)</strong> Wrong exponent scaling for monthly time.</p>"
   },
   {
     "id": 49,
@@ -683,7 +683,7 @@ const mathQuestions = [
       "No value of <i>x</i>"
     ],
     "correct": 0,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Use exponential models such as $A(t)=A_0(1+r)^t$.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(A)</b></p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✓ This matches the computed result.</p><p><strong>(B)</strong> ✗ This does not match the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>Substitute into absolute value function and solve |x−1| = |x+3|.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> f(x−2)=|(x−2)+1|=|x−1|, and f(x+2)=|(x+2)+1|=|x+3|.</p><p><strong>Step 2:</strong> Set equal: |x−1| = |x+3|.</p><p><strong>Step 3:</strong> x is midpoint of 1 and −3, so x = −1.</p><p>The answer is <strong>A</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> x=−1 gives both sides 2.</p><p><strong>(B)</strong> x=0 gives 1 and 3, not equal.</p><p><strong>(C)</strong> x=1 gives 0 and 4, not equal.</p><p><strong>(D)</strong> There is a valid value, so this is false.</p>"
   },
   {
     "id": 50,
@@ -697,7 +697,7 @@ const mathQuestions = [
       "<img src=\"https://images.cracksat.net/digital/br22/common82.jpg\">"
     ],
     "correct": 1,
-    "explanation": "<h5>KEY CONCEPTS</h5><p>Mean is sum divided by count.</p><h5>SOLVING PROCESS</h5><p>Translate the prompt into equations/relationships and solve step by step.</p><p><b>(B)</b> The average of <img src=\"https://images.cracksat.net/digital/br22/e0382-03a.jpg\"> and another number, <i>x</i>, is <img src=\"https://images.cracksat.net/digital/br22/e0392-05.jpg\">.<br>Multiplying both sides by 2 yields</p><h5>WORKING THROUGH EACH CHOICE</h5><p><strong>(A)</strong> ✗ This does not match the computed result.</p><p><strong>(B)</strong> ✓ This matches the computed result.</p><p><strong>(C)</strong> ✗ This does not match the computed result.</p><p><strong>(D)</strong> ✗ This does not match the computed result.</p>"
+    "explanation": "<h5>KEY CONCEPTS</h5><p>If m is the average of a and x, then m=(a+x)/2. Solve this for x.</p><h5>SOLVING PROCESS</h5><p><strong>Step 1:</strong> Write the mean equation with the two expressions shown in the prompt.</p><p><strong>Step 2:</strong> Multiply both sides by 2 to remove the denominator.</p><p><strong>Step 3:</strong> Rearranged form is x = 2m − a, which matches choice B.</p><p>The answer is <strong>B</strong>.</p><h5>WHY EACH CHOICE</h5><p><strong>(A)</strong> Does not match x = 2m − a.</p><p><strong>(B)</strong> Matches the correct rearranged mean equation.</p><p><strong>(C)</strong> Sign/order error from rearrangement.</p><p><strong>(D)</strong> Not equivalent to 2m − a.</p>"
   }
 ];
 
