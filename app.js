@@ -70,6 +70,9 @@
     if (state.mode === "mathIntensive" && typeof mathIntensiveQuestions !== "undefined") {
       return mathIntensiveQuestions;
     }
+    if (state.mode === "grammar" && typeof grammarQuestions !== "undefined") {
+      return grammarQuestions;
+    }
     return questions;
   }
 
@@ -134,6 +137,11 @@
             "The hardest math questions — equivalent to Module 2 Q20-22 difficulty. " +
             "Covers advanced topics: trigonometry, complex numbers, nonlinear systems, sequences, " +
             "and multi-step problem solving. For 750+ scorers.";
+        } else if (mode === "grammar") {
+          typeLabel.innerHTML = "Grammar";
+          startDescription.textContent =
+            "The hardest grammar questions — run-on sentences, dangling modifiers, elliptical constructions, " +
+            "parallel structure, and sentence boundaries. Tests your mastery of Standard English Conventions.";
         } else {
           typeLabel.innerHTML = "Inference &amp; Text Completion";
           startDescription.textContent =
