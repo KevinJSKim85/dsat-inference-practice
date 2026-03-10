@@ -242,20 +242,37 @@
     questionCounter.textContent = `Question ${state.currentIndex + 1} of ${total}`;
     progressFill.style.width = `${((state.currentIndex + 1) / total) * 100}%`;
 
-    if (q.imageUrl) {
-      graphImageSection.classList.remove("hidden");
-      graphImage.src = q.imageUrl;
-    } else {
+    const isMath = state.mode === "math" || state.mode === "mathIntensive";
+    const passageSection = $(".passage-section");
+    const sectionDivider = $(".section-divider");
+
+    if (isMath) {
+      passageSection.classList.add("hidden");
+      sectionDivider.classList.add("hidden");
       graphImageSection.classList.add("hidden");
       graphImage.src = "";
-    }
-
-    if (state.highlights[q.id]) {
-      passageText.innerHTML = state.highlights[q.id];
+      if (q.passage && q.passage !== q.question) {
+        questionStem.innerHTML = q.passage + q.question;
+      } else {
+        questionStem.innerHTML = q.question;
+      }
     } else {
-      passageText.innerHTML = q.passage;
+      passageSection.classList.remove("hidden");
+      sectionDivider.classList.remove("hidden");
+      if (q.imageUrl) {
+        graphImageSection.classList.remove("hidden");
+        graphImage.src = q.imageUrl;
+      } else {
+        graphImageSection.classList.add("hidden");
+        graphImage.src = "";
+      }
+      if (state.highlights[q.id]) {
+        passageText.innerHTML = state.highlights[q.id];
+      } else {
+        passageText.innerHTML = q.passage;
+      }
+      questionStem.innerHTML = q.question;
     }
-    questionStem.innerHTML = q.question;
 
     choicesContainer.innerHTML = "";
     q.choices.forEach((choice, i) => {
