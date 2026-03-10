@@ -67,11 +67,14 @@
     if (state.mode === "math" && typeof mathQuestions !== "undefined") {
       return mathQuestions;
     }
+    if (state.mode === "mathIntensive" && typeof mathIntensiveQuestions !== "undefined") {
+      return mathIntensiveQuestions;
+    }
     return questions;
   }
 
   function renderMath() {
-    if (state.mode !== "math") return;
+    if (state.mode !== "math" && state.mode !== "mathIntensive") return;
     if (typeof renderMathInElement !== "function") return;
     var opts = {
       delimiters: [
@@ -125,6 +128,12 @@
           startDescription.textContent =
             "Practice math questions from real Digital SAT papers covering algebra, geometry, " +
             "data analysis, and advanced math. Includes circles, parabolas, exponents, triangles, and more.";
+        } else if (mode === "mathIntensive") {
+          typeLabel.innerHTML = "Math Intensive";
+          startDescription.textContent =
+            "The hardest math questions — equivalent to Module 2 Q20-22 difficulty. " +
+            "Covers advanced topics: trigonometry, complex numbers, nonlinear systems, sequences, " +
+            "and multi-step problem solving. For 750+ scorers.";
         } else {
           typeLabel.innerHTML = "Inference &amp; Text Completion";
           startDescription.textContent =
@@ -211,7 +220,7 @@
     var sectionLabel = $(".section-label");
     if (sectionLabel) {
       sectionLabel.textContent =
-        state.mode === "math"
+        state.mode === "math" || state.mode === "mathIntensive"
           ? "Section 2, Module 2: Math"
           : "Section 1, Module 1: Reading and Writing";
     }
