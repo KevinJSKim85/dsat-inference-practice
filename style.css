@@ -122,8 +122,8 @@ button {
 .start-container {
     background: var(--card-bg);
     border-radius: var(--radius-lg);
-    padding: 48px 40px;
-    max-width: 560px;
+    padding: 48px 32px;
+    max-width: 720px;
     width: 100%;
     text-align: center;
     box-shadow: var(--shadow-lg);
