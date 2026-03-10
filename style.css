@@ -287,6 +287,14 @@ button {
 }
 .header-tool:hover { background: rgba(255,255,255,0.2); }
 
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    overflow: hidden;
+}
+
 .header-right {
     display: flex;
     align-items: center;
@@ -984,6 +992,8 @@ button {
 /* =============================================
    RESPONSIVE
    ============================================= */
+
+/* --- Tablet & Small Laptop --- */
 @media (max-width: 768px) {
     .quiz-main {
         padding: 16px 12px;
@@ -1008,7 +1018,7 @@ button {
     }
 
     .start-container {
-        padding: 32px 24px;
+        padding: 32px 20px;
     }
 
     .score-display {
@@ -1042,17 +1052,344 @@ button {
 
     .review-question-preview {
         font-size: 0.813rem;
-        max-width: 180px;
+        max-width: 200px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
+
+    .mode-card {
+        flex: 1 1 calc(33.33% - 10px);
+        max-width: none;
+    }
+
+    .mode-label {
+        font-size: 0.813rem;
+    }
+
+    .mode-desc {
+        font-size: 0.625rem;
+    }
+
+    .results-header-card {
+        padding: 28px 20px;
+    }
 }
 
+/* --- Mobile --- */
 @media (max-width: 480px) {
-    .header-center { display: none; }
-    .btn-primary { padding: 10px 20px; }
-    .btn-secondary { padding: 10px 20px; }
+    #start-screen {
+        padding: 24px 12px;
+    }
+
+    .start-container {
+        padding: 24px 16px;
+    }
+
+    .start-title {
+        font-size: 1.5rem;
+    }
+
+    .start-subtitle {
+        font-size: 0.938rem;
+        margin-bottom: 20px;
+    }
+
+    .mode-selector {
+        gap: 8px;
+        padding: 0 4px;
+    }
+
+    .mode-card {
+        flex: 1 1 calc(50% - 8px);
+        max-width: none;
+        padding: 12px 8px;
+    }
+
+    .mode-label {
+        font-size: 0.75rem;
+    }
+
+    .mode-desc {
+        font-size: 0.6rem;
+    }
+
+    .mode-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .start-description {
+        font-size: 0.813rem;
+        margin-bottom: 24px;
+    }
+
+    .btn-large {
+        padding: 12px 36px;
+        font-size: 1rem;
+    }
+
+    .header-center {
+        display: none;
+    }
+
+    .header-left .section-label {
+        font-size: 0.688rem;
+        max-width: 160px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 0.875rem;
+    }
+
+    .btn-secondary {
+        padding: 10px 20px;
+        font-size: 0.875rem;
+    }
+
+    .quiz-main {
+        padding: 12px 8px;
+        padding-bottom: 80px;
+    }
+
+    .content-card {
+        padding: 16px 12px;
+    }
+
+    .question-number-badge {
+        width: 28px;
+        height: 28px;
+        font-size: 0.813rem;
+        margin-bottom: 10px;
+    }
+
+    .question-stem {
+        font-size: 0.938rem;
+        margin-bottom: 16px;
+    }
+
+    .choice-text {
+        font-size: 0.875rem;
+    }
+
+    .choice-letter {
+        min-width: 28px;
+        height: 28px;
+        font-size: 0.813rem;
+    }
+
+    .choice-btn {
+        padding: 11px 12px;
+        gap: 10px;
+    }
+
+    .feedback-body {
+        padding: 14px;
+    }
+
+    .feedback-header {
+        padding: 12px 14px;
+        font-size: 0.938rem;
+    }
+
+    .feedback-explanation p {
+        font-size: 0.813rem;
+    }
+
+    .feedback-explanation h5 {
+        font-size: 0.75rem;
+    }
+
+    .brand-inline {
+        display: none;
+    }
+
+    .footer-center {
+        display: none;
+    }
+
+    .quiz-footer {
+        height: 54px;
+    }
+
+    .score-circle {
+        width: 110px;
+        height: 110px;
+    }
+
+    .score-number {
+        font-size: 2rem;
+    }
+
+    .score-total {
+        font-size: 0.875rem;
+    }
+
+    .results-header-card {
+        padding: 24px 16px;
+    }
+
+    .results-title {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+
+    .review-tabs {
+        gap: 2px;
+        padding: 3px;
+    }
+
+    .review-tab {
+        padding: 8px 8px;
+        font-size: 0.75rem;
+    }
+
+    .review-card-body {
+        padding: 0 14px 14px;
+    }
+
+    .review-passage {
+        font-size: 0.813rem;
+        padding: 10px 12px;
+    }
+
+    .review-explanation {
+        font-size: 0.813rem;
+        padding: 12px;
+    }
+
+    .review-question-preview {
+        max-width: 150px;
+    }
+
+    .navigator-panel {
+        padding: 16px;
+        width: 95vw;
+    }
+
+    .nav-q-btn {
+        font-size: 0.813rem;
+    }
+
+    .navigator-legend {
+        font-size: 0.688rem;
+        gap: 10px;
+    }
+
+    .brand-name {
+        font-size: 0.9rem;
+    }
+
+    .brand-sub {
+        font-size: 0.5rem;
+    }
+
+    .brand-badge {
+        margin-top: 20px;
+        padding-top: 16px;
+    }
+
+    .results-actions {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .results-actions .btn-large {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #results-screen {
+        padding: 20px 12px;
+    }
+
+    .graph-image {
+        max-height: 250px;
+        object-fit: contain;
+    }
+}
+
+/* --- Small Mobile (iPhone SE, etc.) --- */
+@media (max-width: 375px) {
+    .start-container {
+        padding: 20px 12px;
+    }
+
+    .start-title {
+        font-size: 1.35rem;
+    }
+
+    .mode-card {
+        padding: 10px 6px;
+    }
+
+    .mode-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .mode-label {
+        font-size: 0.688rem;
+    }
+
+    .mode-desc {
+        font-size: 0.563rem;
+    }
+
+    .content-card {
+        padding: 14px 10px;
+    }
+
+    .passage-text {
+        font-size: 0.875rem;
+        line-height: 1.65;
+    }
+
+    .question-stem {
+        font-size: 0.875rem;
+    }
+
+    .choice-btn {
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .choice-text {
+        font-size: 0.813rem;
+    }
+
+    .review-question-preview {
+        max-width: 120px;
+    }
+
+    .score-display {
+        gap: 20px;
+    }
+
+    .score-circle {
+        width: 100px;
+        height: 100px;
+        border-width: 5px;
+    }
+
+    .score-number {
+        font-size: 1.75rem;
+    }
+
+    .header-left .section-label {
+        max-width: 120px;
+        font-size: 0.625rem;
+    }
+
+    .feedback-explanation p {
+        font-size: 0.75rem;
+        line-height: 1.65;
+    }
 }
 
 /* =============================================
