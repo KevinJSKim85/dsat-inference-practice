@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital SAT - Reading and Writing Practice</title>
+    <title>Digital SAT Practice</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F4DA;</text></svg>">
+    <!-- KaTeX for math rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- ===================== START SCREEN ===================== -->
@@ -18,7 +22,7 @@
                 </svg>
             </div>
             <h1 class="start-title">Digital SAT<sup>&reg;</sup></h1>
-            <h2 class="start-subtitle">Reading and Writing Practice</h2>
+            <h2 class="start-subtitle">Practice</h2>
 
             <div class="mode-selector" id="mode-selector">
                 <button class="mode-card active" data-mode="inference" id="mode-inference">
@@ -34,6 +38,13 @@
                     </div>
                     <div class="mode-label">Quantitative Evidence</div>
                     <div class="mode-desc">Tables, graphs &amp; data interpretation</div>
+                </button>
+                <button class="mode-card" data-mode="math" id="mode-math">
+                    <div class="mode-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
+                    </div>
+                    <div class="mode-label">Math</div>
+                    <div class="mode-desc">Algebra, geometry &amp; data analysis</div>
                 </button>
             </div>
 
@@ -230,8 +241,9 @@
         </div>
     </div>
 
-    <script src="questions.js?v=8"></script>
-    <script src="graph_questions.js?v=8"></script>
-    <script src="app.js?v=8"></script>
+    <script src="questions.js?v=9"></script>
+    <script src="graph_questions.js?v=9"></script>
+    <script src="math_questions.js?v=9"></script>
+    <script src="app.js?v=9"></script>
 </body>
 </html>

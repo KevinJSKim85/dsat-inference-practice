@@ -64,7 +64,27 @@
     if (state.mode === "graph" && typeof graphQuestions !== "undefined") {
       return graphQuestions;
     }
+    if (state.mode === "math" && typeof mathQuestions !== "undefined") {
+      return mathQuestions;
+    }
     return questions;
+  }
+
+  function renderMath() {
+    if (state.mode !== "math") return;
+    if (typeof renderMathInElement !== "function") return;
+    var opts = {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+      throwOnError: false,
+    };
+    var quizMain = $(".quiz-main");
+    if (quizMain && !quizMain.closest(".hidden")) renderMathInElement(quizMain, opts);
+    var resultsContainer = $(".results-container");
+    if (resultsContainer && !resultsContainer.closest(".hidden"))
+      renderMathInElement(resultsContainer, opts);
   }
 
   function init() {
@@ -100,6 +120,11 @@
           startDescription.textContent =
             "Practice quantitative evidence questions from real Digital SAT papers. " +
             "Each question includes a data table or graph that you must interpret to select the best answer.";
+        } else if (mode === "math") {
+          typeLabel.innerHTML = "Math";
+          startDescription.textContent =
+            "Practice math questions from real Digital SAT papers covering algebra, geometry, " +
+            "data analysis, and advanced math. Includes circles, parabolas, exponents, triangles, and more.";
         } else {
           typeLabel.innerHTML = "Inference &amp; Text Completion";
           startDescription.textContent =
@@ -183,6 +208,14 @@
 
     window.addEventListener("beforeunload", onBeforeUnload);
 
+    var sectionLabel = $(".section-label");
+    if (sectionLabel) {
+      sectionLabel.textContent =
+        state.mode === "math"
+          ? "Section 2, Module 2: Math"
+          : "Section 1, Module 1: Reading and Writing";
+    }
+
     startScreen.classList.add("hidden");
     resultsScreen.classList.add("hidden");
     quizScreen.classList.remove("hidden");
@@ -211,9 +244,9 @@
     if (state.highlights[q.id]) {
       passageText.innerHTML = state.highlights[q.id];
     } else {
-      passageText.textContent = q.passage;
+      passageText.innerHTML = q.passage;
     }
-    questionStem.textContent = q.question;
+    questionStem.innerHTML = q.question;
 
     choicesContainer.innerHTML = "";
     q.choices.forEach((choice, i) => {
@@ -244,7 +277,7 @@
 
       const text = document.createElement("span");
       text.className = "choice-text";
-      text.textContent = choice;
+      text.innerHTML = choice;
 
       btn.appendChild(letter);
       btn.appendChild(text);
@@ -275,6 +308,7 @@
     }
 
     $(".quiz-main").scrollTop = 0;
+    renderMath();
   }
 
   function selectChoice(index) {
@@ -355,6 +389,7 @@
 
     explanationText.innerHTML = q.explanation;
 
+    renderMath();
     setTimeout(() => {
       feedbackPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }, 100);
@@ -603,6 +638,7 @@
         ${filter === "incorrect" ? "No wrong answers. Great job!" : "No questions to display."}
       </div>`;
     }
+    renderMath();
   }
 
   function restartQuiz() {
