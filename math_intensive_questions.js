@@ -379,9 +379,9 @@ const mathIntensiveQuestions = [
   },
   {
     "id": 28,
-    "passage": "<p>If Î<i>ABC</i> is isosceles and mâ <i>C</i> = 90&deg;, which of the following must be true?</p><p>I. tan <i>A</i> = 1</p><p>II. sin <i>A</i> = cos <i>A</i></p><p>III. sin <i>A</i> = cos <i>B</i></p>",
+    "passage": "<p>If △<i>ABC</i> is isosceles and m∠ <i>C</i> = 90&deg;, which of the following must be true?</p><p>I. tan <i>A</i> = 1</p><p>II. sin <i>A</i> = cos <i>A</i></p><p>III. sin <i>A</i> = cos <i>B</i></p>",
     "imageUrl": null,
-    "question": "<p>If Î<i>ABC</i> is isosceles and mâ <i>C</i> = 90&deg;, which of the following must be true?</p><p>I. tan <i>A</i> = 1</p><p>II. sin <i>A</i> = cos <i>A</i></p><p>III. sin <i>A</i> = cos <i>B</i></p>",
+    "question": "<p>If △<i>ABC</i> is isosceles and m∠ <i>C</i> = 90&deg;, which of the following must be true?</p><p>I. tan <i>A</i> = 1</p><p>II. sin <i>A</i> = cos <i>A</i></p><p>III. sin <i>A</i> = cos <i>B</i></p>",
     "choices": [
       "I only",
       "II only",
