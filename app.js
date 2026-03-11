@@ -73,11 +73,14 @@
     if (state.mode === "grammar" && typeof grammarQuestions !== "undefined") {
       return grammarQuestions;
     }
+    if (state.mode === "geometry" && typeof geometryQuestions !== "undefined") {
+      return geometryQuestions;
+    }
     return questions;
   }
 
   function renderMath() {
-    if (state.mode !== "math" && state.mode !== "mathIntensive") return;
+    if (state.mode !== "math" && state.mode !== "mathIntensive" && state.mode !== "geometry") return;
     if (typeof renderMathInElement !== "function") return;
     var opts = {
       delimiters: [
@@ -142,6 +145,11 @@
           startDescription.textContent =
             "The hardest grammar questions — run-on sentences, dangling modifiers, elliptical constructions, " +
             "parallel structure, and sentence boundaries. Tests your mastery of Standard English Conventions.";
+        } else if (mode === "geometry") {
+          typeLabel.innerHTML = "Geometry &amp; Trigonometry";
+          startDescription.textContent =
+            "Hard Module 2 level geometry questions — circle equations, right triangle trigonometry, " +
+            "volume and surface area, coordinate geometry, similar triangles, and arc/sector problems.";
         } else {
           typeLabel.innerHTML = "Inference &amp; Text Completion";
           startDescription.textContent =
@@ -228,7 +236,7 @@
     var sectionLabel = $(".section-label");
     if (sectionLabel) {
       sectionLabel.textContent =
-        state.mode === "math" || state.mode === "mathIntensive"
+        state.mode === "math" || state.mode === "mathIntensive" || state.mode === "geometry"
           ? "Section 2, Module 2: Math"
           : "Section 1, Module 1: Reading and Writing";
     }
