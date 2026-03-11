@@ -127,9 +127,9 @@ const mathIntensiveQuestions = [
   },
   {
     "id": 10,
-    "passage": "<p>If (3 + 5<i>i</i>) Ã· (2 + 3<i>i</i>) = (<i>a</i> + <i>bi</i>), then what is the value of (<i>a</i> + <i>b</i>)?</p>",
+    "passage": "<p>If (3 + 5<i>i</i>) ÷ (2 + 3<i>i</i>) = (<i>a</i> + <i>bi</i>), then what is the value of (<i>a</i> + <i>b</i>)?</p>",
     "imageUrl": null,
-    "question": "<p>If (3 + 5<i>i</i>) Ã· (2 + 3<i>i</i>) = (<i>a</i> + <i>bi</i>), then what is the value of (<i>a</i> + <i>b</i>)?</p>",
+    "question": "<p>If (3 + 5<i>i</i>) ÷ (2 + 3<i>i</i>) = (<i>a</i> + <i>bi</i>), then what is the value of (<i>a</i> + <i>b</i>)?</p>",
     "choices": [
       "-<img src=\"https://images.cracksat.net/digital/br22/e0617-01.jpg\" />",
       "<img src=\"https://images.cracksat.net/digital/br22/e0617-02.jpg\" />",
@@ -435,9 +435,9 @@ const mathIntensiveQuestions = [
   },
   {
     "id": 32,
-    "passage": "<p>If 0&deg; < <i>Î¸</i> < 90&deg; and tan <i>Î¸</i> = <img src=\"https://images.cracksat.net/digital/br22/common90.jpg\" />, what is sin <i>Î¸</i> + cos <i>Î¸</i>?</p>",
+    "passage": "<p>If 0&deg; < <i>θ</i> < 90&deg; and tan <i>θ</i> = <img src=\"https://images.cracksat.net/digital/br22/common90.jpg\" />, what is sin <i>θ</i> + cos <i>θ</i>?</p>",
     "imageUrl": "https://images.cracksat.net/digital/br22/common90.jpg",
-    "question": "<p>If 0&deg; < <i>Î¸</i> < 90&deg; and tan <i>Î¸</i> = <img src=\"https://images.cracksat.net/digital/br22/common90.jpg\" />, what is sin <i>Î¸</i> + cos <i>Î¸</i>?</p>",
+    "question": "<p>If 0&deg; < <i>θ</i> < 90&deg; and tan <i>θ</i> = <img src=\"https://images.cracksat.net/digital/br22/common90.jpg\" />, what is sin <i>θ</i> + cos <i>θ</i>?</p>",
     "choices": [
       "<img src=\"https://images.cracksat.net/digital/br22/common95.jpg\" />",
       "<img src=\"https://images.cracksat.net/digital/br22/common6.jpg\" />",
