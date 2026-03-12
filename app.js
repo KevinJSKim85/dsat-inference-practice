@@ -73,6 +73,9 @@
     if (state.mode === "grammar" && typeof grammarQuestions !== "undefined") {
       return grammarQuestions;
     }
+    if (state.mode === "grammarIntensive" && typeof grammarIntensiveQuestions !== "undefined") {
+      return grammarIntensiveQuestions;
+    }
     if (state.mode === "geometry" && typeof geometryQuestions !== "undefined") {
       return geometryQuestions;
     }
@@ -145,6 +148,12 @@
           startDescription.textContent =
             "The hardest grammar questions — run-on sentences, dangling modifiers, elliptical constructions, " +
             "parallel structure, and sentence boundaries. Tests your mastery of Standard English Conventions.";
+        } else if (mode === "grammarIntensive") {
+          typeLabel.innerHTML = "Grammar Intensive";
+          startDescription.textContent =
+            "50 of the hardest grammar questions — subject-verb agreement traps, pronoun ambiguity, " +
+            "tense/mood shifts, restrictive vs non-restrictive clauses, and advanced punctuation. " +
+            "No overlap with the standard Grammar set.";
         } else if (mode === "geometry") {
           typeLabel.innerHTML = "Geometry &amp; Trigonometry";
           startDescription.textContent =
