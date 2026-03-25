@@ -79,6 +79,9 @@
     if (state.mode === "geometry" && typeof geometryQuestions !== "undefined") {
       return geometryQuestions;
     }
+    if (state.mode === "yjExercise" && typeof yjExerciseQuestions !== "undefined") {
+      return yjExerciseQuestions;
+    }
     return questions;
   }
 
@@ -159,6 +162,11 @@
           startDescription.textContent =
             "Hard Module 2 level geometry questions — circle equations, right triangle trigonometry, " +
             "volume and surface area, coordinate geometry, similar triangles, and arc/sector problems.";
+        } else if (mode === "yjExercise") {
+          typeLabel.innerHTML = "YJ Exercise";
+          startDescription.textContent =
+            "Targeted practice for vocabulary-in-context, weaken/strengthen claims, and logical transitions. " +
+            "50 hard questions strategically ordered to build from weakest areas to mixed review.";
         } else {
           typeLabel.innerHTML = "Inference &amp; Text Completion";
           startDescription.textContent =
