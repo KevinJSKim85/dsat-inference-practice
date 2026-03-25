@@ -64,6 +64,9 @@
     if (state.mode === "graph" && typeof graphQuestions !== "undefined") {
       return graphQuestions;
     }
+    if (state.mode === "graphHard" && typeof graphHardQuestions !== "undefined") {
+      return graphHardQuestions;
+    }
     if (state.mode === "math" && typeof mathQuestions !== "undefined") {
       return mathQuestions;
     }
@@ -124,7 +127,9 @@
 
     modeCards.forEach((card) => {
       card.addEventListener("click", () => {
-        modeCards.forEach((c) => c.classList.remove("active"));
+        modeCards.forEach((c) => {
+          c.classList.remove("active");
+        });
         card.classList.add("active");
         const mode = card.dataset.mode;
         state.mode = mode;
@@ -135,6 +140,11 @@
           startDescription.textContent =
             "Practice quantitative evidence questions from real Digital SAT papers. " +
             "Each question includes a data table or graph that you must interpret to select the best answer.";
+        } else if (mode === "graphHard") {
+          typeLabel.innerHTML = "Quantitative Evidence Hard";
+          startDescription.textContent =
+            "A harder quantitative evidence set with denser tables, multi-step comparisons, " +
+            "and stronger distractors. Designed as a non-overlapping follow-up to the standard set.";
         } else if (mode === "math") {
           typeLabel.innerHTML = "Math";
           startDescription.textContent =
@@ -179,7 +189,9 @@
 
     $$(".review-tab").forEach((tab) => {
       tab.addEventListener("click", () => {
-        $$(".review-tab").forEach((t) => t.classList.remove("active"));
+        $$(".review-tab").forEach((t) => {
+          t.classList.remove("active");
+        });
         tab.classList.add("active");
         renderReviewList(tab.dataset.filter);
       });
